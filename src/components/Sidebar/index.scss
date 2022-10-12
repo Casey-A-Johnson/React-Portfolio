@@ -1,5 +1,5 @@
 .nav-bar {
-  background: #181818;
+  background: #7a7a7c;
   width: 60px;
   height: 100%;
   position: absolute;
@@ -10,17 +10,21 @@
   .logo {
     display: block;
     padding: 8px 0;
-
-    img {
-      display: block;
-      margin: 8px auto;
-      width: 24px;
-      height: auto;
-
-      &.sub-logo {
-        width: 50px;
-      }
-    }
+    text-decoration: none;
+    text-align: center;
+    color: #ffd700;
+    font-size: 42px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -10px;
+  }
+  .sub-logo {
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+    text-align: center;
+    color: #4d4d4e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -50px;
   }
 
   nav {
@@ -67,25 +71,35 @@
         width: 100%;
         text-align: center;
         opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
       }
 
       &:first-child {
-        &::after {
+        &:after {
           content: 'HOME';
         }
       }
     }
+
     a.about-link {
       &:after {
         content: 'ABOUT';
       }
     }
+
     a.contact-link {
       &:after {
         content: 'CONTACT';
       }
     }
+
+    a.portfolio-link {
+      &:after {
+        content: 'PORTFOLIO';
+      }
+    }
+
     a.active {
       svg {
         color: #ffd700;
@@ -98,7 +112,7 @@
     bottom: 20px;
     width: 100%;
     display: block;
-    padding: 0px;
+    padding: 0;
     list-style: none;
     text-align: center;
     margin: 0;
@@ -109,8 +123,11 @@
         display: block;
         font-size: 15px;
         line-height: 16px;
+        color: #4d4d4e;
+      }
 
-        &:hover svg {
+      &:hover {
+        .anchor-icon {
           color: #ffd700;
         }
       }

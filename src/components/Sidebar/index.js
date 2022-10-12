@@ -1,25 +1,22 @@
 import './index.scss'
-import { Link, NavLink } from 'react-router-dom'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
+import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import {
-  faGithub,
-  faLinkedin,
-  faSkype,
-} from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import React from 'react'
 
 const Sidebar = () => {
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/">
-        <img src={LogoS} alt="Logo-s" />
-        <img className="sub-logo" src={LogoSubtitle} alt="Logo-sub" />
-      </Link>
+      <h1 className="logo">C</h1>
+      <h5 className="sub-logo">casey Johnson</h5>
       <nav>
-        <NavLink exact="true" activeclassname="active" to="/">
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          to="/"
+          className="home-link"
+        >
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
         <NavLink
@@ -56,11 +53,6 @@ const Sidebar = () => {
             href="https://github.com/Casey-A-Johnson"
           >
             <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
-          </a>
-        </li>
-        <li>
-          <a target="_blank" rel="noreferrer" href="skype:live:CaseyJohnson">
-            <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
           </a>
         </li>
       </ul>
