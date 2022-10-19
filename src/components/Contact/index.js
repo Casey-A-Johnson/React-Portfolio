@@ -47,14 +47,15 @@ const Contact = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+              strArray={'Contact Me'.split('')}
               idx={15}
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially on ambitious
-            or large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me using below form either.
+            I am excited to start working in this amazing industry. Im very
+            eager to improve my knowledge and work on ambitious porjects. If you
+            have any question or want to get a hold of me plase leave a message
+            in the form below.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>

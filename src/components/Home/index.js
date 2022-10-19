@@ -7,45 +7,6 @@ import Loader from 'react-loaders'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = [
-    ' ',
-    'C',
-    'a',
-    's',
-    'e',
-    'y',
-    ' ',
-    'J',
-    'o',
-    'h',
-    'n',
-    's',
-    'o',
-    'n',
-  ]
-  const jobArray = [
-    'F',
-    'u',
-    'l',
-    'l',
-    ' ',
-    's',
-    't',
-    'a',
-    'c',
-    'k',
-    ' ',
-    'd',
-    'e',
-    'v',
-    'e',
-    'l',
-    'o',
-    'p',
-    'e',
-    'r',
-    '.',
-  ]
 
   useEffect(() => {
     let timeoutId = setTimeout(() => {
@@ -69,14 +30,14 @@ const Home = () => {
             <span className={`${letterClass} _14`}>'m</span>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={nameArray}
+              strArray={' Casey Johnson'.split('')}
               idx={15}
             />
             <br />
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={jobArray}
-              idx={28}
+              strArray={'A full stack developer'.split('')}
+              idx={27}
             />
           </h1>
           <h2> Full Stack Developer / MERN / Java / Python</h2>

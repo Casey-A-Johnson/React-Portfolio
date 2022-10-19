@@ -11,6 +11,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
+import { LoremIpsum } from 'react-lorem-ipsum'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -32,25 +33,12 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+              strArray={'About Me'.split('')}
               idx={15}
             />
           </h1>
-          <p>
-            I'm a very ambitious full stack developer looking for a role in an
-            IT company with the opportunity to work with the latest technologies
-            on challenging and diverse projects.
-          </p>
-          <p align="LEFT">
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
-          </p>
-          <p>
-            If I need to define myself in one sentence that would be a family
-            person, a sports fanatic, and tech-obsessed!!!
-          </p>
+          <LoremIpsum p={3} />
         </div>
-
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
