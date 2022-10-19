@@ -3,12 +3,14 @@ import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faEnvelope,
+  faFile,
   faHome,
   faSuitcase,
   faUser,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import React from 'react'
+import Resume from '../../assets/files/Casey_Johnson_resume (2).pdf'
 
 const Sidebar = () => {
   return (
@@ -66,6 +68,11 @@ const Sidebar = () => {
             href="https://github.com/Casey-A-Johnson"
           >
             <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noreferrer" href={Resume} download={Resume}>
+            <FontAwesomeIcon icon={faFile} color="#4d4d4e" />
           </a>
         </li>
       </ul>

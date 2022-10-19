@@ -38,6 +38,9 @@ const About = () => {
             />
           </h1>
           <LoremIpsum p={3} />
+          {/* <p></p>
+          <p></p>
+          <p></p> */}
         </div>
         <div className="stage-cube-cont">
           <div className="cubespinner">
